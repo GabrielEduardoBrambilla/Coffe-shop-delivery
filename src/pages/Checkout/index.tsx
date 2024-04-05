@@ -1,5 +1,6 @@
 import React from 'react'
+import { Container } from './styles'
 
-export default function Checkout() {
+export function Checkout() {
   return <Container>index</Container>
 }
