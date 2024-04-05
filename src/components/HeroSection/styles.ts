@@ -3,18 +3,20 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: space-between;
   gap: 48px;
   align-items: center;
-  margin: 32px 160px;
+  margin: 5.625rem 10rem;
 `
 
 export const LeftSection = styled.div`
   display: flex;
   flex: 1;
+  max-width: 50%;
+
   min-height: 100%;
   flex-direction: column;
-  gap: 60px;
+  gap: 3.75rem;
   justify-content: space-between;
 `
 export const TextWrapper = styled.div`
@@ -54,6 +56,6 @@ export const AdvantagesPoint = styled.div`
 `
 export const ImageContainer = styled.div`
   display: flex;
-  min-width: 50%;
+  /* min-width: 50%; */
   justify-content: center;
 `
