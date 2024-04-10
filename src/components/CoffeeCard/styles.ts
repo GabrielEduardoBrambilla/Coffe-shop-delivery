@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.25rem 1.5rem;
-  max-height: 100px;
+  min-height: 100px;
   width: 256px;
   background-color: ${props => props.theme.card};
   border-radius: 6px 36px;
@@ -54,21 +54,27 @@ export const InfoWrapper = styled.div`
 export const Action = styled.div`
   display: flex;
   align-items: center;
-  gap: 32px;
+  /* gap: 32px; */
+  justify-content: space-between;
   margin: 32px 0 0 0;
   color: ${props => props.theme.text};
 
   span {
-    font-weight: normal;
-    font-size: 14px;
-  }
-
-  p {
     font-family: 'Baloo 2', sans-serif;
     padding: 0 0 0 4px;
     font-size: 24px;
     font-weight: 800;
+    > span {
+      font-weight: normal;
+      font-size: 14px;
+    }
   }
+`
+export const StepperCartWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
   .iconWrapper {
     display: flex;

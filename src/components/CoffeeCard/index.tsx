@@ -1,6 +1,15 @@
-import { Action, Container, InfoWrapper, Tag, TagWrapper } from './styles'
+import {
+  Action,
+  Container,
+  InfoWrapper,
+  StepperCartWrapper,
+  Tag,
+  TagWrapper
+} from './styles'
 import CoffeDefault from '../../assets/images/Image.png'
 import { Car, ShoppingCart } from '@phosphor-icons/react'
+import { Stepper } from '../Stepper/indext'
+
 export function Card() {
   return (
     <Container>
@@ -16,15 +25,16 @@ export function Card() {
         <span>O tradicional café feito com água quente e grãos moídos</span>
       </InfoWrapper>
       <Action>
-        <p>
+        <span>
           <span>R$ </span>
           9,90
-        </p>
-        <div className="stepper-cart">
+        </span>
+        <StepperCartWrapper>
+          <Stepper />
           <div className="iconWrapper">
             <ShoppingCart size={22} weight="fill" />
           </div>
-        </div>
+        </StepperCartWrapper>
       </Action>
     </Container>
   )

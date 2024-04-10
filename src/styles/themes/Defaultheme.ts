@@ -14,5 +14,5 @@ export const defaultTheme = {
   card: '#F3F2F2',
   background: '#FAFAFA',
   white: '#FFFFFF',
-  margin: '10rem'
+  margin: '3rem'
 }

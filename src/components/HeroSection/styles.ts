@@ -7,6 +7,11 @@ export const Container = styled.div`
   gap: 48px;
   align-items: center;
   margin: 5.625rem ${props => props.theme.margin};
+  @media (max-width: 1150px) {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 32px ${props => props.theme.margin};
+  }
 `
 
 export const LeftSection = styled.div`
@@ -18,8 +23,15 @@ export const LeftSection = styled.div`
   flex-direction: column;
   gap: 3.75rem;
   justify-content: space-between;
+  @media (max-width: 1150px) {
+    max-width: 100%;
+  }
 `
 export const TextWrapper = styled.div`
+  @media (max-width: 1150px) {
+    text-align: center;
+  }
+
   > h2 {
     flex: 0;
     font-size: 3rem;
