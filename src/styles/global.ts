@@ -6,12 +6,13 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-
+  
 
   body {
     background: ${props => props.theme['background']};
     color: ${props => props.theme['text']};
     -webkit-font-smoothing: antialiased;
+
   }
 
   body, input, textarea, button {

@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   gap: 48px;
   align-items: center;
-  margin: 5.625rem 10rem;
+  margin: 5.625rem ${props => props.theme.margin};
 `
 
 export const LeftSection = styled.div`

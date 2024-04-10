@@ -4,7 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   justify-content: space-between;
-  padding: 2rem 10rem;
+  padding: 2rem ${props => props.theme.margin};
+
   max-height: 100px;
 `
 export const LogoContainer = styled.div``
