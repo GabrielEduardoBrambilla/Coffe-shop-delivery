@@ -7,7 +7,7 @@ import {
   TagWrapper
 } from './styles'
 import CoffeDefault from '../../assets/images/Image.png'
-import { Car, ShoppingCart } from '@phosphor-icons/react'
+import { ShoppingCart } from '@phosphor-icons/react'
 import { Stepper } from '../Stepper/indext'
 
 export function Card() {

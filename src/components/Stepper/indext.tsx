@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container } from './styles'
 import { Minus, Plus } from '@phosphor-icons/react'
 
